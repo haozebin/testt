@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>网页</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .all{
+            height:1440px;
+        }
+        .nav{
+            height:125px;
+        }
+        .daohang{
+            width:1200px;
+            margin: auto;
+        }
+        .logo{
+            margin-top: 14px;
+            float:left;
+            width:250px;
+            height:125px;
+        }
+        .container{
+            float:left;
+        }
+        .container li{
+            float:left;
+            list-style: none;
+            margin-top: 65px;
+            width:100px;
+            text-align:center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .dao{
+            border-right:2px solid black;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .dao a{
+            text-decoration: none;
+            color:rgba(0,0,0,1);
+        }
+        .hehe{
+            border-left:0;
+        }
+        .haha{
+            border-right: 0;
+        }
+        .form{
+            margin-top: 65px;
+            float:right;
+        }
+        .search{
+            float:left;
+            width:145px;
+            padding:9px;
+            border: 1px solid rgba(208,61,61,1);
+        }
+        .submit{
+            border:none;
+            width:35px;
+            height:35px;
+            float:left;
+            background:rgba(208,61,61,1) url(tupian/button.png) no-repeat center center;
+        }
+        .banner{
+            height:550px;
+            position:relative;
+        }
+        .banner li{
+            list-style: none;
+            height:538px;
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+        }
+        .banner-one{
+            background: url(tupian/banner-one.jpg) no-repeat center center;
+        }
+        .banner-two{
+            background: url(tupian/banner-two.jpg) no-repeat center center height:510px;
+        }
+        .title{
+            background-color: #FCFCFC;
+            text-align:center; 
+            height:125px;
+        }
+        .h2{
+            padding-top: 50px;
+            color:black;
+            font-size:30px;
+        }
+        .h2 li{
+            width:300px;
+            height:300px;
+            list-style-type:none ;
+        }
+        .bolang-left{
+            position:absolute;
+            top:585px;
+            left:25%;
+            background: url(tupian/zuobolang.png) no-repeat center center;
+        }
+        .bolang-right{
+            position:absolute;
+            top:585px;
+            right:25%;
+            background: url(tupian/youbolang.png) no-repeat center center;
+        }
+        .daohang.clear{
+            width:1300px;
+        }
+        .shangpin{ 
+            position:relative;
+            float:left;
+            width:300px;
+            height:300px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .baozhen{
+            padding-left: 50px;
+            width:250px;
+            height:80px; 
+            position:absolute;
+            bottom:-150px;
+            left:323px;
+            background-color: rgba(0,0,0,0.4);
+            font-size: 20px;
+            line-height: 80px;
+        }
+        .jiezhi{
+            padding-left: 50px;
+            width:250px;
+            height:80px; 
+            position:absolute;
+            bottom:-150px;
+            left:643px;
+            background-color: rgba(0,0,0,0.4);
+            font-size: 20px;
+            line-height: 80px;
+        }
+        .shouji{
+            padding-left: 50px;
+            width:250px;
+            height:80px; 
+            position:absolute;
+            bottom:-150px;
+            left:963px;
+            background-color: rgba(0,0,0,0.4);
+            font-size: 20px;
+            line-height: 80px;
+        }
+        .xiangshui{
+            padding-left: 50px;
+            width:250px;
+            height:80px; 
+            position:absolute;
+            bottom:-150px;
+            left:1283px;
+            background-color: rgba(0,0,0,0.4);
+            font-size: 20px;
+            line-height: 80px;
+        }
+        .baozhen1{
+            padding-left: 50px;
+            width:250px;
+            height:80px; 
+            position:absolute;
+            bottom:-470px;
+            left:323px;
+            background-color: rgba(0,0,0,0.4);
+            font-size: 20px;
+            line-height: 80px;
+        }
+        .jiezhi1{
+            padding-left: 50px;
+            width:250px;
+            height:80px; 
+            position:absolute;
+            bottom:-470px;
+            left:643px;
+            background-color: rgba(0,0,0,0.4);
+            font-size: 20px;
+            line-height: 80px;
+        }
+        .shouji1{
+            padding-left: 50px;
+            width:250px;
+            height:80px; 
+            position:absolute;
+            bottom:-470px;
+            left:963px;
+            background-color: rgba(0,0,0,0.4);
+            font-size: 20px;
+            line-height: 80px;
+        }
+        .xiangshui1{
+            padding-left: 50px;
+            width:250px;
+            height:80px; 
+            position:absolute;
+            bottom:-470px;
+            left:1283px;
+            background-color: rgba(0,0,0,0.4);
+            font-size: 20px;
+            line-height: 80px;
+        }
+        .tupian span{
+            font-size: 35px;
+        }
+        .footer{
+            margin-top: 10px;
+            width:100%;
+            height:360px;
+            background-color: black;
+            line-height: 120px;
+            text-align: center;
+        }
+        .footer p{
+            font-size: 40px;
+            color:#fff;
+        }
+        .footer div{
+            color:#fff;
+        }
+        </style>
+</head>
+<body>
+    <div class="all">
+        <div class="nav clear">
+        <div class="daohang">
+            <img src="tupian/logo.jpg" class="logo" alt="logo"/>
+            <ul class="container clear">
+                <li class="dao hehe"><a href="#">首页</a></li>
+                <li class="dao"><a href="#">商品分类</a></li>
+                <li class="dao"><a href="#">收藏夹</a></li>
+                <li class="dao"><a href="#">购物车</a></li>
+                <li class="dao haha"><a href="#">我的账号</a></li>
+            </ul>
+            <form class="form clear">
+                <input type="text" placeholder="儿童衣服/时尚款式" class="search"/>
+                <input type="button" class="submit"/>
+            </form>
+        </div>
+        </div>
+        <div class="banner">
+        <ul>
+            <li class="banner-one"></li>
+            <li class="banner-two"></li>
+        </ul>
+        </div>
+        <div class="title">
+        <div class="daohang h2">
+            <h2>猜你喜欢</h2>
+            <ul>
+                <li class="bolang-left"></li>
+                <li class="bolang-right"></li>
+            </ul>
+        </div>
+        </div>
+        <div class="daohang clear">
+        <div class="tupian clear">
+            <img src="tupian/baozhen.jpg" alt="baozhen" class="shangpin"/>
+            <div class="baozhen">
+                抱枕&nbsp;&nbsp;¥&nbsp;<span>100</span>/个
+            </div>
+
+            <img src="tupian/jiezhi.jpg" alt="jiezhi" class="shangpin"/>
+            <div class="jiezhi">
+                戒指&nbsp;&nbsp;¥&nbsp;<span>199</span>/个
+            </div>
+
+            <img src="tupian/shouji.jpg" alt="shouji" class="shangpin"/>
+            <div class="shouji">
+                iphone&nbsp;&nbsp;¥&nbsp;<span>6199</span>/个
+            </div>
+
+            <img src="tupian/xiangshui.jpg" alt="xiangshui" class="shangpin"/>
+            <div class="xiangshui">
+                Chanel&nbsp;&nbsp;¥&nbsp;<span>19999</span>/个
+            </div>
+
+
+            <img src="tupian/baozhen.jpg" alt="baozhen" class="shangpin"/>
+            <div class="baozhen1">
+                抱枕&nbsp;&nbsp;¥&nbsp;<span>100</span>/个
+            </div>
+
+            <img src="tupian/jiezhi.jpg" alt="jiezhi" class="shangpin"/>
+            <div class="jiezhi1">
+                戒指&nbsp;&nbsp;¥&nbsp;<span>199</span>/个
+            </div>
+
+            <img src="tupian/shouji.jpg" alt="shouji" class="shangpin"/>
+            <div class="shouji1">
+                iphone&nbsp;&nbsp;¥&nbsp;<span>6199</span>/个
+            </div>
+
+            <img src="tupian/xiangshui.jpg" alt="xiangshui" class="shangpin"/>
+            <div class="xiangshui1">
+                Chanel&nbsp;&nbsp;¥&nbsp;<span>19999</span>/个
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>版权声明</p>
+        <p><div>苏ICP备10207551号-4</div></p>
+        <div>本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</div>
+    </div> 
+</body>
+</html>
